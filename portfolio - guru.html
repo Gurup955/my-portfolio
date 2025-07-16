@@ -1,0 +1,369 @@
+<!-- portfolio  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Guru</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body - dark theme */
+        body {
+            font-family: Arial, sans-serif;
+            background: #000;
+            color: #fff;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        /* Navigation bar */
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #111;
+            color: #ffd700;
+            /* Yellow accent */
+            padding: 15px 30px;
+            border-radius: 8px;
+        }
+
+        header nav a {
+            color: #ffd700;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #fff;
+        }
+
+        /* Main heading with floating animation */
+        h1 {
+            text-align: center;
+            margin: 30px 0;
+            color: #ffd700;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        /* Container for table, list, and image in a row */
+        .section-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+
+        /* Table styling */
+        table {
+            background: #111;
+            border-collapse: collapse;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #333;
+        }
+
+        th {
+            background: #222;
+            color: #ffd700;
+        }
+
+        tbody tr:hover {
+            background: #222;
+        }
+
+        /* Article styling */
+        article {
+            margin-top: 20px;
+            background: #111;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        /* Image styling - rectangular */
+        img {
+            display: block;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            /* rectangular with slight rounding */
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+
+        /* Aside styling - list of skills */
+        aside {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        aside span {
+            background: #222;
+            color: #ffd700;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+
+        /* Footer with scrolling text */
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: #111;
+            color: #ffd700;
+            overflow: hidden;
+            height: 40px;
+        }
+
+        footer span {
+            display: inline-block;
+            padding-left: 100%;
+            white-space: nowrap;
+            animation: scroll 15s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* NEW: Terms and Conditions section */
+        .terms {
+            margin: 40px 0;
+            background: #111;
+            padding: 20px;
+            border-radius: 8px;
+            color: #ffd700;
+        }
+
+        /* NEW: Hire Me form styling */
+        .hire-me {
+            margin: 40px 0 80px;
+            background: #111;
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        .hire-me h2 {
+            color: #ffd700;
+            margin-bottom: 20px;
+        }
+
+        .hire-me form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hire-me label {
+            margin: 10px 0 5px;
+            color: #fff;
+        }
+
+        .hire-me input[type="text"],
+        .hire-me input[type="tel"],
+        .hire-me textarea {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #222;
+            color: #fff;
+        }
+
+        .hire-me input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .hire-me button {
+            margin-top: 20px;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            background: #ffd700;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .hire-me button:hover {
+            background: #e6c200;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>Hello, I AM GURU</div>
+            <div>
+                <a href="https://github.com/guru3467" target="_blank">github</a>
+                <a href="https://www.instagram.com/guru03467/" target="_blank">instagram</a>
+                <a href="https://x.com/GuruprasadJad10" target="_blank">twitter</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>you are welcome in the world of development...!!!</h1>
+
+        <section class="section-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>fullName</td>
+                        <td>Guruprasad Narayan Jadhav</td>
+                    </tr>
+                    <tr>
+                        <td>class</td>
+                        <td>Second Year Computer Engineering</td>
+                    </tr>
+                    <tr>
+                        <td>college</td>
+                        <td><a href="https://www.dypcoei.edu.in/">D.Y.Patil College of Engineering and Innovation</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>schooling</td>
+                        <td><a
+                                href="https://schools.org.in/parbhani/27171000183/nutan-vidya-mandir-boy-s-&-girls-high-school.html">late.Raosaheb
+                                Jamkar secondary and higher secondary school</td>
+                    </tr>
+                    <tr>
+                        <td>address</td>
+                        <td>Talegaon-Pune, Maharashtra, India</td>
+                    </tr>
+                    <tr>
+                        <td>contact</td>
+                        <td>
+                            <div>guruprasadjadhav28@gmail.com</div>
+                            <div>+91-8830110558</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <aside>
+                <span>computer engineer - second year</span>
+                <span>frontend developer - HTML</span>
+                <span>python developer</span>
+                <span>content creator, social media manager, content writer, video editor</span>
+            </aside>
+
+        
+        </section>
+
+        <article>
+            <!-- NEW: meaningful article -->
+            <h2>About Me</h2>
+            <p>
+                I am Guruprasad Narayan Jadhav, a passionate and dedicated Computer Engineering student with expertise
+                in frontend web development, Python programming, and digital content creation. I love to bring ideas to
+                life through clean and efficient code.
+            </p>
+            <p>
+                In addition to my academic pursuits, I actively manage social media pages, write engaging content, and
+                edit videos to deliver high-quality digital experiences. I am always ready to learn new technologies and
+                work on challenging projects.
+            </p>
+            <p>
+                My goal is to collaborate with innovative teams and contribute my skills to create meaningful digital
+                products that impact lives positively.
+            </p>
+        </article>
+
+        <!-- NEW: Terms and Conditions -->
+        <section class="terms">
+            <h2>Terms & Conditions</h2>
+            <p>
+                By hiring me or working with me, you agree to respect my intellectual property rights, provide clear
+                project requirements, ensure timely communication, and make fair payments for my work. I reserve the
+                right to decline any project that conflicts with my ethics or personal values.
+            </p>
+        </section>
+
+        <!-- NEW: Hire Me Form -->
+        <section class="hire-me">
+            <h2>Hire Me</h2>
+            <form id="hireForm" action="https://www.linkedin.com/in/guruprasad-jadhav-0a1534258/" target="_blank">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="number">Contact Number:</label>
+                <input type="tel" id="number" name="number" required>
+
+                <label for="need">Your Need:</label>
+                <textarea id="need" name="need" rows="5" required></textarea>
+
+                <label>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    I agree to the Terms & Conditions
+                </label>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <span>all copyrights are conserved</span>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Portfolio page loaded with dark theme and yellow highlights.');
+
+            const hireForm = document.getElementById('hireForm');
+            hireForm.addEventListener('submit', (e) => {
+                const terms = document.getElementById('terms');
+                if (!terms.checked) {
+                    alert('Please agree to the Terms & Conditions before submitting.');
+                    e.preventDefault();
+                } else {
+                    alert('Thank you for submitting your request! I will get back to you soon.');
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
